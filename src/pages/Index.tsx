@@ -61,7 +61,7 @@ const Index = () => {
           
           <div className="flex justify-center space-x-6 mt-8">
             <a 
-              href="https://github.com/vishalsharma" 
+              href="https://github.com/hyyvishal" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-smooth"
@@ -69,7 +69,7 @@ const Index = () => {
               GitHub
             </a>
             <a 
-              href="https://linkedin.com/in/vishalsharma" 
+              href="https://www.linkedin.com/in/vishal-sharma-8b2a81322" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-smooth"
@@ -77,7 +77,7 @@ const Index = () => {
               LinkedIn
             </a>
             <a 
-              href="mailto:vishal.sharma@example.com"
+              href="mailto:heyyvishal2005@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-smooth"
             >
               Contact

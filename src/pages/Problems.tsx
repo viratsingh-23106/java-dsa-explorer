@@ -233,7 +233,7 @@ const Problems = () => {
           </p>
           <Button variant="hero" asChild>
             <a 
-              href="https://github.com/vishalsharma/dsa-solutions" 
+              href="https://github.com/heyyvishal/dsa-solutions" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center"

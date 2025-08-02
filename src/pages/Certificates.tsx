@@ -216,7 +216,7 @@ const Certificates = () => {
               </a>
             </Button>
             <Button variant="outline" asChild>
-              <a href="mailto:vishal.sharma@example.com">
+              <a href="mailto:heyyvishal2005@gmail.com">
                 Get In Touch
               </a>
             </Button>
