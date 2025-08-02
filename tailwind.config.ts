@@ -52,16 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				/* Code syntax colors */
+				'code-keyword': 'hsl(var(--code-keyword))',
+				'code-string': 'hsl(var(--code-string))',
+				'code-comment': 'hsl(var(--code-comment))',
+				'code-number': 'hsl(var(--code-number))',
+				'code-function': 'hsl(var(--code-function))'
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				mono: ['JetBrains Mono', 'Fira Code', 'Monaco', 'monospace']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
