@@ -6,38 +6,65 @@ import { Award, ExternalLink, Calendar, Building } from "lucide-react";
 const certificates = [
   {
     id: 1,
-    title: "Java Programming Masterclass",
-    issuer: "Oracle",
+    title: "Java Programming Fundamentals",
+    issuer: "Oracle Academy",
     date: "2024",
     type: "Programming",
-    description: "Comprehensive Java programming certification covering OOP, data structures, and advanced concepts.",
-    skills: ["Java", "OOP", "Collections", "Multithreading"],
+    description: "Comprehensive Java programming course covering OOP principles, exception handling, and collections framework.",
+    skills: ["Java", "OOP", "Collections", "Exception Handling"],
     credentialUrl: "#",
     verified: true
   },
   {
     id: 2,
-    title: "Data Structures and Algorithms",
-    issuer: "LeetCode",
+    title: "Data Structures & Algorithms",
+    issuer: "Coding Ninjas",
     date: "2024",
-    type: "Algorithms",
-    description: "Advanced certification in algorithmic problem solving and data structure implementation.",
-    skills: ["Algorithms", "Data Structures", "Problem Solving", "Time Complexity"],
+    type: "DSA",
+    description: "In-depth course on data structures and algorithms with hands-on coding problems and optimization techniques.",
+    skills: ["Arrays", "Linked Lists", "Trees", "Graphs", "Dynamic Programming"],
     credentialUrl: "#",
     verified: true
   },
   {
     id: 3,
-    title: "Software Engineering Principles",
-    issuer: "MIT OpenCourseWare",
+    title: "Web Development with Java",
+    issuer: "Coursera",
     date: "2023",
-    type: "Engineering",
-    description: "Fundamentals of software engineering, design patterns, and best practices.",
-    skills: ["Design Patterns", "Software Architecture", "Testing", "Debugging"],
+    type: "Web Development",
+    description: "Full-stack web development using Java, Spring Boot, and modern web technologies.",
+    skills: ["Spring Boot", "REST APIs", "Database Integration", "Web Security"],
+    credentialUrl: "#",
+    verified: true
+  },
+  {
+    id: 4,
+    title: "Database Management Systems",
+    issuer: "University Course",
+    date: "2024",
+    type: "Database",
+    description: "Academic course covering database design, SQL, normalization, and database optimization.",
+    skills: ["SQL", "Database Design", "MySQL", "Data Modeling"],
     credentialUrl: "#",
     verified: true
   }
 ];
+
+const academicInfo = {
+  university: "Maharishi University of Information Technology",
+  degree: "Bachelor of Computer Applications (BCA)",
+  batch: "2023-2026",
+  currentSemester: "5th Semester",
+  cgpa: "8.5/10",
+  relevantCourses: [
+    "Data Structures and Algorithms",
+    "Object-Oriented Programming with Java",
+    "Database Management Systems",
+    "Software Engineering",
+    "Computer Networks",
+    "Web Technologies"
+  ]
+};
 
 const Certificates = () => {
   return (
@@ -48,12 +75,61 @@ const Certificates = () => {
             <Award className="h-12 w-12 text-accent" />
           </div>
         </div>
-        <h1 className="text-4xl font-bold mb-4">Certifications & Achievements</h1>
+        <h1 className="text-4xl font-bold mb-4">Education & Certifications</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Professional certifications and achievements in Java programming,
-          data structures, algorithms, and software engineering.
+          Academic background, professional certifications, and continuous learning journey
+          in computer science and software development.
         </p>
       </div>
+
+      {/* Academic Information */}
+      <Card className="mb-8 shadow-elegant gradient-card">
+        <CardHeader>
+          <div className="flex items-center space-x-3">
+            <div className="p-3 rounded-lg bg-primary/20">
+              <Building className="h-8 w-8 text-primary" />
+            </div>
+            <div>
+              <CardTitle className="text-2xl">Academic Background</CardTitle>
+              <CardDescription className="text-lg">Current Education & Studies</CardDescription>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-lg mb-2">{academicInfo.degree}</h4>
+                <p className="text-muted-foreground">{academicInfo.university}</p>
+                <p className="text-sm text-muted-foreground">{academicInfo.batch}</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <span className="font-medium">Current: </span>
+                  <span>{academicInfo.currentSemester}</span>
+                </div>
+                <div>
+                  <span className="font-medium">CGPA: </span>
+                  <span className="text-accent font-medium">{academicInfo.cgpa}</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-3">Relevant Coursework</h4>
+              <div className="grid grid-cols-1 gap-2">
+                {academicInfo.relevantCourses.map((course, index) => (
+                  <div 
+                    key={index}
+                    className="px-3 py-2 text-sm bg-secondary/50 rounded-md border border-border/50"
+                  >
+                    {course}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         {certificates.map((cert) => (
@@ -127,14 +203,24 @@ const Certificates = () => {
 
       <Card className="text-center shadow-card">
         <CardContent className="py-8">
-          <h3 className="text-xl font-semibold mb-4">Continuous Learning</h3>
+          <h3 className="text-xl font-semibold mb-4">Continuous Learning Journey</h3>
           <p className="text-muted-foreground mb-6">
-            I'm constantly expanding my knowledge and earning new certifications.
-            Check back regularly for updates on my latest achievements.
+            As a dedicated BCA student, I'm constantly expanding my knowledge through coursework,
+            online certifications, and hands-on projects. My goal is to become a skilled software developer
+            with strong fundamentals in computer science.
           </p>
-          <Button variant="hero">
-            Contact Me for Latest Updates
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="hero" asChild>
+              <a href="/resume.pdf" download>
+                Download Full Resume
+              </a>
+            </Button>
+            <Button variant="outline" asChild>
+              <a href="mailto:vishal.sharma@example.com">
+                Get In Touch
+              </a>
+            </Button>
+          </div>
         </CardContent>
       </Card>
     </div>

@@ -1,0 +1,118 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 500
+>>
+stream
+BT
+/F1 24 Tf
+50 720 Td
+(VISHAL SHARMA) Tj
+0 -30 Td
+/F1 14 Tf
+(BCA Student | Java Developer | DSA Enthusiast) Tj
+0 -40 Td
+(Email: vishal.sharma@example.com) Tj
+0 -20 Td
+(Phone: +91-XXXXXXXXXX) Tj
+0 -20 Td
+(LinkedIn: linkedin.com/in/vishalsharma) Tj
+0 -20 Td
+(GitHub: github.com/vishalsharma) Tj
+0 -40 Td
+/F1 16 Tf
+(EDUCATION) Tj
+0 -25 Td
+/F1 12 Tf
+(Bachelor of Computer Applications \(BCA\)) Tj
+0 -15 Td
+(Maharishi University of Information Technology) Tj
+0 -15 Td
+(2023-2026 | Current CGPA: 8.5/10) Tj
+0 -30 Td
+/F1 16 Tf
+(SKILLS) Tj
+0 -25 Td
+/F1 12 Tf
+(Programming: Java, C++, Python, JavaScript) Tj
+0 -15 Td
+(Web Technologies: HTML, CSS, React, Spring Boot) Tj
+0 -15 Td
+(Database: MySQL, MongoDB) Tj
+0 -15 Td
+(Tools: Git, VS Code, IntelliJ IDEA) Tj
+0 -30 Td
+/F1 16 Tf
+(PROJECTS) Tj
+0 -25 Td
+/F1 12 Tf
+(DSA Portfolio Website - Personal portfolio showcasing) Tj
+0 -15 Td
+(algorithm implementations and problem solutions) Tj
+0 -30 Td
+/F1 16 Tf
+(ACHIEVEMENTS) Tj
+0 -25 Td
+/F1 12 Tf
+(• Solved 150+ DSA problems on various platforms) Tj
+0 -15 Td
+(• Completed Java Programming certification) Tj
+0 -15 Td
+(• Active contributor on GitHub with 25+ repositories) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000000826 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+895
+%%EOF

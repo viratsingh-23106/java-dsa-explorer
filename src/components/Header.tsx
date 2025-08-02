@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import { Code, Home, BookOpen, Award } from "lucide-react";
+import { Code, Home, BookOpen, Award, Github, Linkedin, Download, Target } from "lucide-react";
 
 export const Header = () => {
   const location = useLocation();
@@ -14,7 +14,7 @@ export const Header = () => {
           <div className="rounded-lg bg-primary p-2">
             <Code className="h-6 w-6 text-primary-foreground" />
           </div>
-          <span className="font-bold text-xl">Java DSA Portfolio</span>
+          <span className="font-bold text-xl">Vishal Sharma</span>
         </Link>
 
         <nav className="flex items-center space-x-6 text-sm font-medium ml-8">
@@ -37,7 +37,18 @@ export const Header = () => {
           >
             <div className="flex items-center space-x-2">
               <BookOpen className="h-4 w-4" />
-              <span>Topics</span>
+              <span>Algorithms</span>
+            </div>
+          </Link>
+          <Link
+            to="/problems"
+            className={`transition-colors hover:text-foreground/80 ${
+              isActive("/problems") ? "text-foreground" : "text-foreground/60"
+            }`}
+          >
+            <div className="flex items-center space-x-2">
+              <Target className="h-4 w-4" />
+              <span>Problems</span>
             </div>
           </Link>
           <Link
@@ -48,20 +59,36 @@ export const Header = () => {
           >
             <div className="flex items-center space-x-2">
               <Award className="h-4 w-4" />
-              <span>Certificates</span>
+              <span>Education</span>
             </div>
           </Link>
         </nav>
 
-        <div className="ml-auto">
-          <Button variant="hero" asChild>
+        <div className="ml-auto flex items-center space-x-3">
+          <Button variant="ghost" size="icon" asChild>
             <a 
-              href="https://github.com" 
+              href="https://github.com/vishalsharma" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center space-x-2"
+              aria-label="GitHub Profile"
             >
-              <span>View on GitHub</span>
+              <Github className="h-5 w-5" />
+            </a>
+          </Button>
+          <Button variant="ghost" size="icon" asChild>
+            <a 
+              href="https://linkedin.com/in/vishalsharma" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </Button>
+          <Button variant="hero" size="sm" asChild>
+            <a href="/resume.pdf" download className="flex items-center space-x-2">
+              <Download className="h-4 w-4" />
+              <span>Resume</span>
             </a>
           </Button>
         </div>

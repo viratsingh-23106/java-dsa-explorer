@@ -13,10 +13,10 @@ const Index = () => {
   ];
 
   const stats = [
-    { label: "Algorithms Implemented", value: "36+" },
-    { label: "Data Structures", value: "15+" },
-    { label: "Test Cases", value: "200+" },
-    { label: "Code Coverage", value: "95%" }
+    { label: "Problems Solved", value: "150+" },
+    { label: "GitHub Repositories", value: "25+" },
+    { label: "Current Semester", value: "5th" },
+    { label: "DSA Rating", value: "1600+" }
   ];
 
   return (
@@ -31,27 +31,57 @@ const Index = () => {
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
-            Java DSA Portfolio
+            Vishal Sharma
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive implementations of Data Structures and Algorithms in Java.
-            Explore, learn, and run code with detailed explanations and test cases.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto leading-relaxed">
+            BCA Student & Java Developer
+          </p>
+          
+          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            Passionate about Data Structures & Algorithms. Currently pursuing BCA from 
+            <span className="text-accent font-medium"> Maharishi University of Information Technology</span> (2023-2026).
+            Solving problems, building solutions, and sharing knowledge through code.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="hero" asChild>
-              <Link to="/topics" className="flex items-center">
-                Explore Algorithms
+              <Link to="/problems" className="flex items-center">
+                View Problems Solved
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link to="/certificates" className="flex items-center">
-                View Certificates
+              <a href="/resume.pdf" download className="flex items-center">
+                Download Resume
                 <CheckCircle className="h-5 w-5 ml-2" />
-              </Link>
+              </a>
             </Button>
+          </div>
+          
+          <div className="flex justify-center space-x-6 mt-8">
+            <a 
+              href="https://github.com/vishalsharma" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              GitHub
+            </a>
+            <a 
+              href="https://linkedin.com/in/vishalsharma" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              LinkedIn
+            </a>
+            <a 
+              href="mailto:vishal.sharma@example.com"
+              className="text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              Contact
+            </a>
           </div>
         </div>
       </section>
